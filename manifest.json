@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shorts Blocker",
+  "version": "1.0",
+  "description": "Blocks YouTube Shorts from Home, Search, Sidebar, and Recommendations.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": ["https://www.youtube.com/*"]
+}

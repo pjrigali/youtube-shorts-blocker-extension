@@ -1,0 +1,16 @@
+/* Sidebar buttons */
+ytd-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+.ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+/* Shelves and sections */
+ytd-reel-shelf-renderer,
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer:has(#title-container:has(span:contains("Shorts")))),
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer:has(#rich-shelf-header:has(span:contains("Shorts")))),
+yt-shelf-header-layout:has(span:contains("Shorts")),
+/* Individual videos */
+ytd-video-renderer:has(a[href^="/shorts/"]),
+ytd-compact-video-renderer:has(a[href^="/shorts/"]),
+yt-lockup-view-model:has(a[href^="/shorts/"]),
+ytd-rich-item-renderer:has(a[href^="/shorts/"]) {
+  display: none !important;
+}
